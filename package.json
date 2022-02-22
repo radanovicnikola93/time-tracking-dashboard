@@ -11,13 +11,14 @@
     "url": "git+https://github.com/radanovicnikola93/time-tracking-dashboard.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nikola Radanovic",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/radanovicnikola93/time-tracking-dashboard/issues"
   },
   "homepage": "https://github.com/radanovicnikola93/time-tracking-dashboard#readme",
   "dependencies": {
+    "node-sass": "^7.0.1",
     "sass": "^1.49.8"
   }
 }
