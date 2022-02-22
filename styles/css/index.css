@@ -51,7 +51,22 @@ main {
   display: grid;
   grid-template-areas: 'user work play study' 'user exercise social self-care';
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem; }
+  main .user {
+    grid-area: user; }
+  main .stats--work {
+    grid-area: work; }
+  main .stats--play {
+    grid-area: play; }
+  main .stats--study {
+    grid-area: study; }
+  main .stats--exercise {
+    grid-area: exercise; }
+  main .stats--social {
+    grid-area: social; }
+  main .self-care {
+    grid-area: self-care; }
 
 body {
   min-height: 100vh;

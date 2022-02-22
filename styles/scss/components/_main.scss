@@ -9,4 +9,33 @@ main {
     ;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+
+    .user {
+        grid-area: user;
+    }
+
+    .stats--work {
+        grid-area: work;
+    }
+
+    .stats--play {
+        grid-area: play;
+    }
+
+    .stats--study {
+        grid-area: study;
+    }
+
+    .stats--exercise {
+        grid-area: exercise;
+    }
+
+    .stats--social {
+        grid-area: social;
+    }
+
+    .self-care {
+        grid-area: self-care;
+    }
 }
