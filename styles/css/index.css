@@ -55,6 +55,15 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start; }
+  .card div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .card div:first-child h2 {
+      font-weight: 400; }
+    .card div:first-child a {
+      color: #bdc1ff;
+      text-decoration: none; }
 
 main {
   background-color: white;
@@ -85,4 +94,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem; }
