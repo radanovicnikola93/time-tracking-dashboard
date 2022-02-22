@@ -18,14 +18,38 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
+        // h2
         h2 {
             font-weight: $fw-400;
         }
         // dots
         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: $clr-pale-blue;
+            font-size: $fs-400;
+            font-weight: $fw-500;
             text-decoration: none;
+        }
+    }
+
+    // second div
+    div:nth-of-type(2) {
+        p {
+            font-size: $fs-600;
+            font-weight: $fw-300;
+        }
+    }
+
+    // third div
+    div:last-child {
+        p {
+            color: $clr-pale-blue;
+            font-size: $fs-000;
+            font-weight: $fw-300;
         }
     }
 }
