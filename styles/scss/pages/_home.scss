@@ -1,0 +1,10 @@
+@import "../sass-utils/variables";
+
+body {
+    min-height: 100vh;
+    background-color: $clr-very-dark-blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
