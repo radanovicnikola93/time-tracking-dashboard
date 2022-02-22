@@ -50,7 +50,7 @@ table {
   color: #fff;
   border-radius: 1rem;
   height: 10rem;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -102,14 +102,48 @@ main {
     grid-area: self-care; }
 
 .card-user {
+  outline: 1px solid green;
   background-color: #1c1f4a;
   color: #fff;
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start; }
+  .card-user .user--info {
+    outline: 1px solid green;
+    background-color: #6f76c8;
+    border-radius: 1.5rem;
+    width: 100%;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start; }
+    .card-user .user--info div:first-child img {
+      height: 5.625rem;
+      border: 0.2rem solid #fff;
+      border-radius: 50%; }
+    .card-user .user--info div:last-child p {
+      font-size: 0.9rem;
+      font-weight: 300; }
+    .card-user .user--info div:last-child h1 {
+      font-size: 2rem;
+      font-weight: 300; }
+  .card-user .user--toggle-time {
+    outline: 1px solid green;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%; }
+    .card-user .user--toggle-time > div a {
+      text-decoration: none;
+      color: #6f76c8; }
+      .card-user .user--toggle-time > div a:active, .card-user .user--toggle-time > div a:focus, .card-user .user--toggle-time > div a:hover {
+        color: #fff; }
 
 body {
   min-height: 100vh;
