@@ -86,7 +86,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem; }
-  main .user {
+  main .card-user {
     grid-area: user; }
   main .stats--work {
     grid-area: work; }
@@ -101,7 +101,7 @@ main {
   main .self-care {
     grid-area: self-care; }
 
-.user {
+.card-user {
   background-color: #1c1f4a;
   color: #fff;
   border-radius: 1rem;
