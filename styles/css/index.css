@@ -101,6 +101,16 @@ main {
   main .self-care {
     grid-area: self-care; }
 
+.user {
+  background-color: #1c1f4a;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+
 body {
   min-height: 100vh;
   background-color: #0f1424;
