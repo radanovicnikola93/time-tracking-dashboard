@@ -45,6 +45,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+main {
+  background-color: white;
+  width: 80%;
+  display: grid;
+  grid-template-areas: 'user work play study' 'user exercise social self-care';
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
 body {
   min-height: 100vh;
   background-color: #0f1424;
