@@ -4,7 +4,7 @@
   "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w styles/scss/ -o styles/css/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/radanovicnikola93/time-tracking-dashboard/issues"
   },
-  "homepage": "https://github.com/radanovicnikola93/time-tracking-dashboard#readme"
+  "homepage": "https://github.com/radanovicnikola93/time-tracking-dashboard#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
 }
