@@ -79,7 +79,6 @@ table {
     font-weight: 300; }
 
 main {
-  background-color: white;
   width: 80%;
   display: grid;
   grid-template-areas: 'user work play study' 'user exercise social self-care';
