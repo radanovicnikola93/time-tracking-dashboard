@@ -4,12 +4,6 @@
     border-radius: 1rem;
     min-width: 10rem;
 
-    // flex
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-
     position: relative; // for the user containers
 
     .user {
