@@ -50,8 +50,6 @@ table {
   color: #fff;
   border-radius: 1rem;
   height: 10rem;
-  padding: 2rem;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -90,7 +88,7 @@ main {
   gap: 2rem; }
   main .card-user {
     grid-area: user; }
-  main .stats--work {
+  main .outer-card--work {
     grid-area: work; }
   main .stats--play {
     grid-area: play; }
@@ -102,6 +100,24 @@ main {
     grid-area: social; }
   main .self-care {
     grid-area: self-care; }
+
+.outer-card {
+  position: relative;
+  border-radius: 1rem;
+  min-width: 10rem; }
+  .outer-card .inner-card {
+    position: absolute; }
+  .outer-card .background-card {
+    border-radius: 1rem;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%; }
+  .outer-card .card {
+    bottom: 0;
+    left: 0;
+    height: 85%;
+    width: 100%; }
 
 .card-user {
   background-color: #1c1f4a;
