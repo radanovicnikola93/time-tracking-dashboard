@@ -1,0 +1,25 @@
+.outer-card {
+    position: relative;
+    border-radius: 1rem;
+    min-width: 10rem;
+    min-height: 13rem;
+
+    .inner-card {
+        position: absolute;
+    }
+
+    .background-card {
+        border-radius: 1rem;
+        top: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;
+    }
+
+    .card {
+        bottom: 0;
+        left: 0;
+        height: 85%;
+        width: 100%;
+    }
+}

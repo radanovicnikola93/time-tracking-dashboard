@@ -1,0 +1,36 @@
+@import "../sass-utils/variables";
+.background-card {
+    display: flex;
+    justify-content: flex-end;
+
+    > img {
+        margin-top: -1rem;
+        margin-right: 1rem;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.background-card--work {
+    background-color: $clr-work;
+}
+
+.background-card--play {
+    background-color: $clr-play;
+}
+
+.background-card--study {
+    background-color: $clr-study;
+}
+
+.background-card--exercise {
+    background-color: $clr-exercise;
+}
+
+.background-card--social {
+    background-color: $clr-social;
+}
+
+.background-card--self-care {
+    background-color: $clr-self-care;
+}

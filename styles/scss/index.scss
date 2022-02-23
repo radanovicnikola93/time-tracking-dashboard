@@ -3,9 +3,13 @@
 @import "./base/typography";
 
 // components
+@import "./components/main"; // main
+
+@import "./components/outer-card"; // card
+@import "./components/background-card";
 @import "./components/card";
-@import "./components/main";
-@import "./components/card-user";
+
+@import "./components/card-user"; // user
 
 // layout
 @import "./layout/stats";
