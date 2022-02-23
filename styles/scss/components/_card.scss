@@ -40,19 +40,39 @@
     }
 
     // second div
-    div:nth-of-type(2) {
-        p {
-            font-size: $fs-600;
-            font-weight: $fw-300;
+    div:last-child {
+        display: flex;
+        flex-direction: column;
+        div:first-child {
+            p {
+                font-size: $fs-600;
+                font-weight: $fw-300;
+            }
+        }
+
+        div:last-child {
+            p {
+                color: $clr-pale-blue;
+                font-size: $fs-000;
+                font-weight: $fw-300;
+            }
         }
     }
+}
 
-    // third div
-    div:last-child {
-        p {
-            color: $clr-pale-blue;
-            font-size: $fs-000;
-            font-weight: $fw-300;
+
+@media (max-width: 500px) {
+    .card {
+        div:last-child {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            div:last-child {
+                display: flex;
+                justify-content: flex-end;
+            }
         }
     }
 }

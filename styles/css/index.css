@@ -160,13 +160,26 @@ main {
       font-size: 1.5rem;
       font-weight: 500;
       text-decoration: none; }
-  .card div:nth-of-type(2) p {
-    font-size: 3rem;
-    font-weight: 300; }
-  .card div:last-child p {
-    color: #bdc1ff;
-    font-size: 0.9rem;
-    font-weight: 300; }
+  .card div:last-child {
+    display: flex;
+    flex-direction: column; }
+    .card div:last-child div:first-child p {
+      font-size: 3rem;
+      font-weight: 300; }
+    .card div:last-child div:last-child p {
+      color: #bdc1ff;
+      font-size: 0.9rem;
+      font-weight: 300; }
+
+@media (max-width: 500px) {
+  .card div:last-child {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card div:last-child div:last-child {
+      display: flex;
+      justify-content: flex-end; } }
 
 .card-user {
   background-color: #1c1f4a;

@@ -1,161 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./styles/css/index.css">
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main>
-    <!-- USER -->
-    <div class="card-user">
-      <!-- Info -->
-      <div class="user user--info">
-        <div>
-          <img src="./images/image-jeremy.png" alt="user">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/css/index.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- USER -->
+      <div class="card-user">
+        <!-- Info -->
+        <div class="user user--info">
+          <div>
+            <img src="./images/image-jeremy.png" alt="user" />
+          </div>
+          <div>
+            <p>Report for</p>
+            <h1>
+              Nikola <br />
+              Radanović
+            </h1>
+          </div>
         </div>
-        <div>
-          <p>Report for</p>
-          <h1>Nikola <br> Radanović</h1>
+
+        <!-- Toogle Time -->
+        <div class="user user--toggle-time">
+          <div>
+            <a href="#">Daily</a>
+          </div>
+          <div>
+            <a href="#">Weekly</a>
+          </div>
+          <div>
+            <a href="#">Montlhy</a>
+          </div>
         </div>
       </div>
 
-      <!-- Toogle Time -->
-      <div class="user user--toggle-time">
-        <div>
-          <a href="#">Daily</a>
-        </div>
-        <div>
-          <a href="#">Weekly</a>
-        </div>
-        <div>
-          <a href="#">Montlhy</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- STATS -->
+      <!-- STATS -->
       <!-- Work -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--work">
-          <img src="./images/icon-work.svg" alt="">
+          <img src="./images/icon-work.svg" alt="" />
         </div>
         <div class="inner-card card card--work">
           <div>
             <h2>Work</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- Play -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--play">
-          <img src="./images/icon-play.svg" alt="play">
+          <img src="./images/icon-play.svg" alt="play" />
         </div>
         <div class="inner-card card card--play">
           <div>
             <h2>Play</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- Study -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--study">
-          <img src="./images/icon-study.svg" alt="study">
+          <img src="./images/icon-study.svg" alt="study" />
         </div>
         <div class="inner-card card card--study">
           <div>
             <h2>Study</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- Exercise -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--exercise">
-          <img src="./images/icon-exercise.svg" alt="exercise">
+          <img src="./images/icon-exercise.svg" alt="exercise" />
         </div>
         <div class="inner-card card card--exercise">
           <div>
             <h2>Exercise</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- Social -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--social">
-          <img src="./images/icon-social.svg" alt="social">
+          <img src="./images/icon-social.svg" alt="social" />
         </div>
         <div class="inner-card card card--social">
           <div>
             <h2>Exercise</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- Self-care -->
       <div class="outer-card">
         <div class="inner-card background-card background-card--self-care">
-          <img src="./images/icon-self-care.svg" alt="self care">
+          <img src="./images/icon-self-care.svg" alt="self care" />
         </div>
         <div class="inner-card card card--self-care">
           <div>
             <h2>Self Care</h2>
-            <a href="#"><img src="./images/icon-ellipsis.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
           </div>
           <div>
-            <p>10hrs</p>
-          </div>
-          <div>
-            <p>Last week - 11hrs</p>
+            <div>
+              <p>10hrs</p>
+            </div>
+            <div>
+              <p>Last week - 11hrs</p>
+            </div>
           </div>
         </div>
       </div>
-  </main>
+    </main>
 
-  <script src="./scripts/index.js"></script>
-</body>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
