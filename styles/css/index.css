@@ -108,14 +108,21 @@ main {
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
+  min-width: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  position: relative; }
+  .card-user .user {
+    position: absolute; }
   .card-user .user--info {
+    top: 0;
+    left: 0;
+    background-color: #6f76c8;
     border-radius: 1.5rem;
     width: 100%;
-    flex-basis: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -131,7 +138,8 @@ main {
       font-size: 2rem;
       font-weight: 300; }
   .card-user .user--toggle-time {
-    flex-basis: 30%;
+    bottom: 10%;
+    max-height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
