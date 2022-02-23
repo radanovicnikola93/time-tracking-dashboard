@@ -73,3 +73,18 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .card-user {
+        .user--info {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .user--toggle-time {
+            flex-direction: row;
+            align-items: center;
+
+        }
+    }
+}

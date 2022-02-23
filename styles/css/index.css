@@ -213,6 +213,14 @@ main {
       .card-user .user--toggle-time > div a:active, .card-user .user--toggle-time > div a:focus, .card-user .user--toggle-time > div a:hover {
         color: #fff; }
 
+@media (max-width: 500px) {
+  .card-user .user--info {
+    flex-direction: row;
+    align-items: center; }
+  .card-user .user--toggle-time {
+    flex-direction: row;
+    align-items: center; } }
+
 body {
   min-height: 100vh;
   background-color: #0f1424;
