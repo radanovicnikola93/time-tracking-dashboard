@@ -68,6 +68,26 @@ main {
   main .self-care {
     grid-area: self-care; }
 
+@media (max-width: 500px) {
+  main {
+    grid-template-areas: 'user' 'work' 'play' 'study' 'exercise' 'social' 'self-care';
+    grid-template-columns: 1fr;
+    gap: 2rem; }
+    main .card-user {
+      grid-area: user; }
+    main .outer-card--work {
+      grid-area: work; }
+    main .stats--play {
+      grid-area: play; }
+    main .stats--study {
+      grid-area: study; }
+    main .stats--exercise {
+      grid-area: exercise; }
+    main .stats--social {
+      grid-area: social; }
+    main .self-care {
+      grid-area: self-care; } }
+
 .outer-card {
   position: relative;
   border-radius: 1rem;
