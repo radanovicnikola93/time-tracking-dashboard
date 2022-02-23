@@ -25,8 +25,6 @@
         justify-content: space-evenly;
         align-items: flex-start;
 
-        
-
         div:first-child {
             img {
                 height: 5.625rem;
@@ -36,9 +34,14 @@
         }
 
         div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             p {
+                color: $clr-pale-blue;
                 font-size: $fs-000;
                 font-weight: $fw-300;
+                margin-bottom: 0.5rem;
             }
 
             h1 {
@@ -78,7 +81,12 @@
     .card-user {
         .user--info {
             flex-direction: row;
+            justify-content: space-between;
             align-items: center;
+
+            div:last-child {
+
+            }
         }
 
         .user--toggle-time {

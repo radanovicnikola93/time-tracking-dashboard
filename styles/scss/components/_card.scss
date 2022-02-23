@@ -25,7 +25,7 @@
 
         // h2
         h2 {
-            font-weight: $fw-400;
+            font-weight: $fw-500;
         }
         // dots
         a {
@@ -72,6 +72,10 @@
             div:last-child {
                 display: flex;
                 justify-content: flex-end;
+
+                p {
+                    font-size: $fs-200;
+                }
             }
         }
     }

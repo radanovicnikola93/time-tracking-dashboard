@@ -152,7 +152,7 @@ main {
     justify-content: space-between;
     align-items: center; }
     .card div:first-child h2 {
-      font-weight: 400; }
+      font-weight: 500; }
     .card div:first-child a {
       display: flex;
       align-items: center;
@@ -180,7 +180,9 @@ main {
     align-items: center; }
     .card div:last-child div:last-child {
       display: flex;
-      justify-content: flex-end; } }
+      justify-content: flex-end; }
+      .card div:last-child div:last-child p {
+        font-size: 1.125rem; } }
 
 .card-user {
   background-color: #1c1f4a;
@@ -206,12 +208,18 @@ main {
       height: 5.625rem;
       border: 0.2rem solid #fff;
       border-radius: 50%; }
-    .card-user .user--info div:last-child p {
-      font-size: 0.9rem;
-      font-weight: 300; }
-    .card-user .user--info div:last-child h1 {
-      font-size: 2rem;
-      font-weight: 300; }
+    .card-user .user--info div:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .card-user .user--info div:last-child p {
+        color: #bdc1ff;
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem; }
+      .card-user .user--info div:last-child h1 {
+        font-size: 2rem;
+        font-weight: 300; }
   .card-user .user--toggle-time {
     bottom: 0;
     height: 30%;
@@ -230,6 +238,7 @@ main {
 @media (max-width: 500px) {
   .card-user .user--info {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center; }
   .card-user .user--toggle-time {
     flex-direction: row;
