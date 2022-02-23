@@ -70,6 +70,7 @@ main {
 
 @media (max-width: 500px) {
   main {
+    margin: 2rem 0;
     grid-template-areas: 'user' 'work' 'play' 'study' 'exercise' 'social' 'self-care';
     grid-template-columns: 1fr;
     gap: 2rem; }

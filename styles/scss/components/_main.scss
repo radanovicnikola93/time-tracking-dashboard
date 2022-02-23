@@ -41,6 +41,7 @@ main {
 
 @media (max-width: 500px) {
     main {
+        margin: 2rem 0;
     grid-template-areas: 
         'user'
         'work'
