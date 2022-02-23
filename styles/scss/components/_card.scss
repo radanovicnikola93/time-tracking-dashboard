@@ -14,6 +14,10 @@
     justify-content: space-evenly;
     align-items: flex-start;
 
+    &.hidden-card {
+        display: none;
+    }
+
     // first div
     div:first-child {
         width: 100%;

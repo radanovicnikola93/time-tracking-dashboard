@@ -56,6 +56,8 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start; }
+  .card.hidden-card {
+    display: none; }
   .card div:first-child {
     width: 100%;
     display: flex;
