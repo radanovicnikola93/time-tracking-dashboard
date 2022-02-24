@@ -229,10 +229,13 @@ main {
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 1rem; }
-    .card-user .user--toggle-time > div a {
+    .card-user .user--toggle-time > button {
+      background: none;
+      border: none;
       text-decoration: none;
+      cursor: pointer;
       color: #6f76c8; }
-      .card-user .user--toggle-time > div a:active, .card-user .user--toggle-time > div a:focus, .card-user .user--toggle-time > div a:hover {
+      .card-user .user--toggle-time > button:active, .card-user .user--toggle-time > button:focus, .card-user .user--toggle-time > button:hover {
         color: #fff; }
 
 @media (max-width: 500px) {
