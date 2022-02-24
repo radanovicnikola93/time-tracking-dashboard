@@ -3,37 +3,74 @@
 // - in that container grab every single elelemnt
 // - for every element update content
 
-// card nodes
-const cardStatsNodes = document.querySelectorAll(".card--stats");
-// card array
-const cardStatsArray = [...cardStatsNodes];
-
-// links
+// buttons
 const timeTogglers = document.querySelectorAll(
-  ".card-user .user--toggle-time div a"
+  ".btn"
 );
 
 // data
 const url = "./scripts/data.json";
 
-fetch(url)
-  .then((response) => {
-    return response.json(); // return response in json
-  })
-  .then((data) => {
-    let stats = data;
+// fetch
+const fetchData = async() => {
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log( response)
+  console.log(data);
+  createContainers(data);
+}
 
-    // loop through stats
-    stats.map(stat => {})
-    // loop through cards
-    cardStatsArray.map((card) => {
-      let currentHrs = card.querySelector(".current-hrs");
-      let previousHrs = card.querySelector(".previous-hrs");
-      let calendar = card.querySelector(".calendar");
-    });
-    // add individial stat to individual card
-    
+const createContainers = activities => {
+  let cards = activities.map(activity => {
+    return `
+        <!-- Daily -->
+        <div class="daily">
+          <div>
+          <h2>${activity.title}</h2>
+          <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
+        </div>
+        <div class="card--stats">
+          <div>
+            <p><span class="current-hrs">${activity.timeframes.daily.current}</span>hrs</p>
+          </div>
+          <div>
+            <p>Last <span class="calendar">Yesterday</span> - <span class="previous-hrs">${activity.timeframes.daily.previous}</span>hrs</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- Weekly -->
+        <div class="weekly">
+          <div>
+            <h2>${activity.title}</h2>
+            <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <div class="card--stats">
+          <div>
+            <p><span class="current-hrs">${activity.timeframes.weekly.current}</span>hrs</p>
+          </div>
+          <div>
+            <p>Last <span class="calendar">Last month</span> - <span class="previous-hrs">${activity.timeframes.weekly.previous}</span>hrs</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- Montlhy -->
+        <div class="monthly">
+          <div>
+          <h2>${activity.title}</h2>
+          <a href="#"><img src="./images/icon-ellipsis.svg" alt="" /></a>
+        </div>
+        <div class="card--stats">
+          <div>
+            <p><span class="current-hrs">${activity.timeframes.monthly.current}</span>hrs</p>
+          </div>
+          <div>
+            <p>Last <span class="calendar">Last month</span> - <span class="previous-hrs">${activity.timeframes.monthly.previous}</span>hrs</p>
+          </div>
+        </div>
+        </div>
+
+        `;
   })
-  .catch((err) => {
-    console.log(err);
-  });
+}

@@ -62,14 +62,14 @@
         align-items: flex-start;
         padding: 1rem;
 
-        > button {
+        > .btn {
             background: none;
             border: none;
                 text-decoration: none;
                 cursor: pointer;
                 color: $clr-desaturated-blue;
 
-                &:active,
+                &.active,
                 &:focus,
                 &:hover {
                     color: #fff;
